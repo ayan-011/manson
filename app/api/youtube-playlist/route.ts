@@ -16,6 +16,7 @@ interface YouTubePlaylistItem {
 export async function GET() {
   const apiKey = process.env.YOUTUBE_API_KEY
   const playlistId = process.env.YOUTUBE_PLAYLIST_ID
+ 
 
   if (!apiKey || !playlistId) {
     return NextResponse.json(
