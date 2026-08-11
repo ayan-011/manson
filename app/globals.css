@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Fonts  */
+
+.might {
+  font-family: var(--font-might);
+}
