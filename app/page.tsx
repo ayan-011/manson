@@ -21,10 +21,13 @@ const Page: React.FC = () => {
   className="w-10 -mt-1    left-2 top-2 opacity-90"
 />
         </div>
-<h1 className='absolute left-32 top-48  font-bold might text-red-600 flex flex-col '>
-  <span className='text-[15vw] tracking-tighter'>8 <span className="text-white/80  ">to</span> 6</span>
-  <span className='text-[8.5vw]  text-white/80 -mt-32'>NONSTOP</span>
-     
+<h1 className='might absolute w-full px-4 text-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-auto lg:px-0 lg:text-left lg:left-32 lg:top-48 lg:translate-x-0 lg:translate-y-0 font-bold text-red-600 flex flex-col'>
+  <span className='text-[30vw] sm:text-[32vw] lg:text-[15vw] tracking-tighter leading-none'>
+    8 <span className="text-white/80">to</span> 6
+  </span>
+  <span className='text-[17vw] ml-1 sm:text-[17vw] lg:text-[8.5vw] text-white/80 -mt-5 lg:-mt-10 leading-none'>
+    NONSTOP
+  </span>
 </h1>
         <YouTubePlayer />
         <Playlist />

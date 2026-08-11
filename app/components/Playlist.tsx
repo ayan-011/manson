@@ -38,7 +38,7 @@ const Playlist: React.FC = () => {
       <button
         ref={buttonRef}
         onClick={() => setIsOpen((prev) => !prev)}
-       className="fixed top-6 right-6 md:top-auto md:bottom-8.5 md:right-6 z-50 p-3.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.25)] text-white/90 hover:text-white hover:bg-white/15 transition cursor-pointer"
+       className="fixed top-4 right-6 md:top-auto md:bottom-8.5 md:right-6 z-50 p-3.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.25)] text-white/90 hover:text-white hover:bg-white/15 transition cursor-pointer"
         aria-label={isOpen ? 'Close playlist' : 'Open playlist'}
       >
         {isOpen ? <X className="w-5 h-5" /> : <ListMusic className="w-5 h-5" />}

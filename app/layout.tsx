@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import CustomCursor from "./customcursor";
 
 const Might = localFont({
   src: "../public/font/might/Might.ttf",
@@ -27,9 +28,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${Might.variable} h-full antialiased`}
     >
-      <body className={`min-h-full flex flex-col ${Might.variable}`}>{children}</body>
+      <body className="min-h-full flex flex-col ">
+        <CustomCursor />{children}</body>
     </html>
   );
 }
