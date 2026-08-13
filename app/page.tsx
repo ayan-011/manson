@@ -8,7 +8,7 @@ const Page: React.FC = () => {
     <PlayerProvider >
       <div>
         <img
-          src="/bg2.png"
+          src="/bg1.png"
           alt=""
           className="w-full h-screen object-cover overflow-hidden opacity-80  "
         />
@@ -21,11 +21,11 @@ const Page: React.FC = () => {
   className="w-10 -mt-1    left-2 top-2 opacity-90"
 />
         </div>
-<h1 className='might absolute w-full px-4 text-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-auto lg:px-0 lg:text-left lg:left-32 lg:top-48 lg:translate-x-0 lg:translate-y-0 font-bold text-red-600 flex flex-col'>
-  <span className='text-[30vw] sm:text-[32vw] lg:text-[15vw] tracking-tighter leading-none'>
+<h1 className='might absolute w-full px-4 text-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-auto lg:px-0 lg:text-left lg:left-32 lg:top-48 lg:translate-x-20 lg:translate-y-0 font-bold text-red-600 flex flex-col'>
+  <span className='text-[30vw] sm:text-[32vw] lg:text-[17vw] lg:tracking-tighter tracking-tight leading-none'>
     8 <span className="text-white/80">to</span> 6
   </span>
-  <span className='text-[17vw] ml-1 sm:text-[17vw] lg:text-[8.5vw] text-white/80 -mt-5 lg:-mt-10 leading-none'>
+  <span className='text-[17vw] ml-1 sm:text-[17vw] lg:text-[9.5vw] text-white/80 -mt-5 lg:-mt-10 leading-none'>
     NONSTOP
   </span>
 </h1>
