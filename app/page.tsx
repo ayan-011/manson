@@ -6,11 +6,11 @@ import { PlayerProvider } from '@/context/PlayerContext'
 const Page: React.FC = () => {
   return (
     <PlayerProvider >
-      <div>
+      <div className='select-none  '>
         <img
           src="/bg1.png"
           alt=""
-          className="w-full h-screen object-cover overflow-hidden opacity-80  "
+          className="w-full h-screen object-cover overflow-hidden opacity-80  pointer-events-none "
         />
         <div className="absolute flex gap-2 lg:p-5 p-2 lg:left-3 lg:top-0 top-5 bg- itemscenter">
 
@@ -18,12 +18,12 @@ const Page: React.FC = () => {
         <img
   src="/greek.gif"
   alt=""
-  className="md:w-10 w-6 left-2 top-2 opacity-90"
+  className="md:w-10 w-6 left-2 top-2 opacity-90 pointer-events-none"
 />
         </div>
 <h1 className='  might absolute w-full px-4 text-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-auto 
                  lg:px-0 lg:text-left lg:left-32 lg:top-48 lg:translate-x-14 lg:translate-y-0 font-bold text-red-600
-                  flex flex-col'>
+                  flex flex-col mt-20'>
   <span className='  text-[30vw] sm:text-[32vw] lg:text-[11vw] lg:tracking-tighter tracking-tight leading-none'>
     8 <span className="text-white/80 ">to</span> 6
   </span>

@@ -170,7 +170,7 @@ const YouTubePlayer: React.FC = () => {
   const track = tracks[trackIndex]
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-xl">
+    <div className="cursor-pointer fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-xl">
       {/* Hidden YouTube iframe — audio only, no visible video UI */}
       <div ref={containerRef} className="absolute w-px h-px overflow-hidden opacity-0 pointer-events-none" />
 
@@ -180,7 +180,7 @@ const YouTubePlayer: React.FC = () => {
           <img
             src={track?.poster}
             alt={track?.title}
-            className="w-11 h-11 rounded-full object-cover ring-1 ring-white/30 animate-[spin_4s_linear_infinite]"
+            className="w-11 pointer-events-none h-11 rounded-full object-cover ring-1 ring-white/30 animate-[spin_4s_linear_infinite]"
             style={{ animationPlayState: isPlaying ? 'running' : 'paused' }}
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-black pointer-events-none" />
@@ -222,10 +222,10 @@ const YouTubePlayer: React.FC = () => {
         <div className="flex items-center gap-2 shrink-0">
           <button
             onClick={handleBackward}
-            className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition"
+            className="p-2   rounded-full text-white/80 hover:text-white hover:bg-white/10 transition"
             aria-label="Previous track"
           >
-            <SkipBack className="w-4 h-4" fill="currentColor" />
+            <SkipBack className="w-4 h-4" fill="currentColor " />
           </button>
 
           <button
