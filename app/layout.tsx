@@ -8,6 +8,10 @@ const Might = localFont({
   src: "../public/font/might/Might.ttf",
   variable: "--font-might",
 });
+const Mirage = localFont({
+  src: "../public/font/mirage/BrightMirage-1jRwM.otf",
+  variable: "--font-might",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${Might.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${Might.variable} ${Mirage.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col ">
         <CustomCursor />{children}</body>
